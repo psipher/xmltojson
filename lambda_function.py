@@ -4,7 +4,7 @@ import boto3
 
 # boto3 S3 initialization
 s3_client = boto3.client("s3")
-bucket = "otx-payload"
+bucket = "BUCKET-NAME"
 
 def lambda_handler(event, context):
     filename = event['Records'][0]['s3']['object']['key']
